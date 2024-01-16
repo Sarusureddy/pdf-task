@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <br>
+        <p style="font-size: 15px;">page:246-250</p>
+        <p style="<b>;font-size: 20px;margin-left: 20px;">Troutt, Gribbin, Shanker & Zhang</p>
+         <p style="font-style: italic;font-size: 20px;margin-left: 20px;">Table 1: British rates departments data based on Dyson and Thanassoulis (1988).Efficiency rating based on model MDE-2 with preemptive positive weights modification(continued)</p>
+        <img src="table%201.jpg">
+        <p style="<b>;font-size: 20px;margin-left: 20px;">non-council hereditaments, rate rebates generated, and summonses issued and distress
+warrants obtained—were measured in units of 10,000, 1,000, and 1,000, respectively. The
+fourth— net present value of non-council rates collected, was measured in units of £10,000.
+This last one was included as a cost driver (called an output by Dyson and Thanassoulis,
+and Thanassoulis et al.) to reflect the additional administrative effort exerted to ensure the
+timely payment of large revenue producing cases.
+Thanassoulis et al. (1987) briefly discussed the possible disaggregation of the cost
+pools. They indicate that this would have been possible to some extent but decided against
+this for several reasons. First, these costs represented the cost of real resources used and
+available for management deployment. Next, they felt that the increased number of variables
+that would result might tend to decrease the discrimination power of the data envelopment
+analysis (DEA) method they were studying. Next, and importantly, it was felt that the
+disaggregated data were less reliable. This concern is well founded, particularly in the present
+context. Datar and Gupta (1994) have shown that disaggregation can actually increase errors.
+The method used in both Dyson and Thanassoulis (1988) and Thanassoulis et al (1987)
+was a modification of data envelopment analysis (DEA), another efficiency estimation
+technique. It is worthwhile to briefly discuss DEA in regard to the above and other relevant</p>
+        <br>
+    
+        <p style="<b>;font-size: 20px;margin-left: 20px;">points. An introduction to DEA is contained in Charnes, Cooper, Lewin, and Seiford. (1994).
+There are several DEA models, but we limit our coverage to that used in Dyson and
+Thanassoulis. If we use the ar
+ notation for output weights in the DEA model M1 of Dyson
+and Thanassoulis (page 564), we obtain the model(s):</p>
+        <br>
+        <img src="image%20formula.jpg">
+        <p style="<b>;font-size: 20px;margin-left: 20px;">Unlike the one-pass solution of model MPE, Model M1(jo
+) is solved for each unit, (jo
+),
+in turn. The solutions arjo therefore depend on which unit is being featured in the objective
+function. Typically, some of the arjo values will be zero for various units. In the present cost
+rates context, the following interpretation can be given to the M1(jo
+) DEA model. If unit jo
+were allowed to choose the activities and drivers to become applicable for the entire group
+of units, then the M1(jo
+) model solution obtains these in such a way as to give that unit the
+most favorable efficiency score. The principal difficulty here is that no consensus is being
+achieved on the most efficient cost rates. With the M1 (jo
+) DEA model, each unit can select
+cost rates that make it look most favorable. Dyson and Thanassoulis (1988) call this
+phenomenon weights flexibility. Their work was motivated, in part, to modify the M1(jo
+) DEA
+technique to limit this flexibility, and provides a more extensive discussion of this DEA
+limitation.</p>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">Except in unusual circumstances, activity cost rates, ar
+, can only be positive. In this
+section, we consider this requirement as a preemptive priority. For the solution values, ar
+*,
+to be strictly positive, it is necessary that they be basic variables in an optimal solution. This
+may occur gratuitously. Otherwise one or more may be non-basic, and therefore have value
+zero. The standard LP solution report provides reduced costs. For a variable with optimal
+value of zero, the reduced cost may be interpreted as follows. It indicates the smallest amount
+by which the objective function coefficient for the variable must be increased in order that
+the variable becomes positive in an optimal solution.</p>
+        <p style="<b>;font-size: 20px;margin-left: 20px;">The last column of Table 1 gives the efficiency scores obtained by model MPE with
+preemptive positive costs. Descriptive statistics have been added as supplemental information.
+The MPE model was solved using SAS/IML software (1995), which includes a linear
+programming call function. The initial solution assigned a zero optimal value only to a1
+*. (The
+full solution for this case was a1
+*=0, a2
+*=0.0882, a3
+*=0.2671, a4
+*=0.0664.) Thus, it was deemed
+necessary to implement the preemptive positive weights modification. The reduced cost for
+variable a1
+ was given as -1.220440. The objective coefficient was 55.52898. Therefore, the
+modified procedure required increasing the coefficient of a1
+ to 56.747. The resulting estimates
+were as follows:</p>
+        <img src="image%20formula%202.jpg">
+        <br>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">Troutt, Gribbin, Shanker & Zhang</p>
+         <p style="font-style: italic;font-size: 20px;margin-left: 20px;">Table 2: Descriptive statistics for the derived data, Yr</p>
+        <img src ="table%202.jpg">
+        <br>
+        <p style="<b>;font-size: 20px;margin-left: 20px;">The corresponding efficiency scores of the units are shown in the last column of Table 1.
+Table 2 gives descriptive statistics for the Yr
+ data.</p>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">While not true for the example presented here, it is possible that more than one cost
+rate is initially estimated as zero or the reduced cost is also zero when strict positivity is
+required. Then, it is necessary to proceed as follows. Suppose an auxiliary variable m, and
+nr
+ new constraints ar ≥ m are joined to the MPE model. If the optimal value of m is positive,
+then so it must be also for all the cost rates. Let λ be a non-negative parameter chosen by the
+             analyst and consider the modified objective function given by</p>
+        <img src="formula%203.jpg">
+        <p style="<b>;font-size: 20px;margin-left: 20px;">When the value of λ is zero, the objective function is the same as the original one with m*
+= 0. We have the following theorem whose proof is given the Appendix.
+Theorem 1: Let z *(λ), ar
+            *(λ), and m* (λ) be the solution of the MPE (λ) model:</p>
+        <img src="formula%204.jpg">
+        <br>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">Then (1): z*(λ) is monotone non-decreasing in λ and z*(λ) →∞ as λ→0; and (2): Σ ar
+*(λ) Yrj
+             is monotone non-increasing in λ.</p>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">We propose the solution for positive weights to be that corresponding to the greatest
+lower bound of λ values for which m*(λ) > 0. This may be estimated by trial and error. We
+develop a rationale for such positive weights procedures by writing the MPE model objective
+function in the form ∑ar
+ (∑ Yrj). If maximization of this objective function yields a1
+* = 0, then
+evidently the coefficient, ∑ Y1j is too small in some sense relative to the other coefficients.
+It may be noted that the Yrj = yrj/xj
+ data are in the nature of reciprocal costs. When the sum
+of these is too small, the implication is that their own reciprocals, the xj
+             /yrj, are on average</p>
+        <p style="<b>;font-size: 20px;margin-left: 20px;">too large. This is suggestive of inefficiency with respect to the r-th activity. In such a case,
+assignment of a zero optimal cost estimate would mask this kind of inefficiency. By using
+the reduced cost adjustment, or adding the λm term to the objective function, a compensation
+is made for coefficients that are apparently too small in that sense.
+Some comparisons with the results of Dyson and Thanassoulis (1988) can now be
+discussed. As part of their study, a regression through the origin was obtained. The
+coefficients of that regression model can be interpreted as average cost rates for these
+            activities. The results were as follows:</p>
+        <img src="formula%205.jpg">
+         <p style="<b>;font-size: 20px;margin-left: 20px;">It will be noted that these average rates are uniformly higher than the presently
+estimated rates in (3.4), giving a measure of face validity. That is, it is necessary that the cost
+rates of the most efficient units be lower than the average cost rates for all the units. Also,
+the four departments rated as most efficient by the present method are the same as those
+indicated by the Dyson and Thanassoulis (1988) approach.
+It may be observed that the preliminary regression step also gives information on the
+question of positivity of the cost rates. The positivity of a1 gives further evidence on that
+for a1
+*. Here a1 is positive and significant. (The significance level was not specified in Dyson
+and Thanassoulis). Since the units are assumed to be comparable, it appears unlikely that
+one or a few could perform activity one with no cost while the typical unit does incur cost
+for the activity. If a particular unit could produce an activity with zero cost (ar
+*= 0) while the
+average unit does incur cost for the activity, then it must have a radically superior process
+not actually comparable with the others. Similarly, this regression model also validates
+             activity four as influential on costs. The next section discusses model aptness.</p>
+        <br>
+        <center>
+        <h1>ESTIMATION CRITERION QUALITY ISSUES</h1>
+        </center>
+        <p style="<b>;font-size: 20px;margin-left: 20px;">A basic assumption underlying the MPE estimation principle’s applicability is that the
+sample of units under analysis does, in fact, have the goal of achieving maximum (1.0)
+efficiency. This is a model aptness issue that parallels the requirement of N(0,σ2
+) residuals
+in OLS regression theory. In the present MPE case, the corresponding issue is to specify
+a measured characteristic of the vj
+ that indicates consistency with a goal or target of unity
+(1.0) efficiency. In this section, we propose what may be called the normal-like-or-better
+effectiveness criterion for these fitted efficiency scores.
+As a model for appropriate concentration on a target, we begin with an interpretation
+of the multivariate normal distribution, N (µ,Σ), on ℜn . If a distribution of attempts has the
+N(µ,Σ) or even higher concentration of density at the mode µ, then we propose this as
+evidence that µ is indeed a plausible target of the attempts. This is exemplified by considering
+a distribution model for the results of throwing darts at a bull’s-eye target. Common
+experience suggests that a bivariate normal density represents such data reasonably well.
+            Steeper or flatter densities would still be indicative of effective attempts, but densities whose</p>
+           <p style="<b>;font-size: 20px;margin-left: 20px;">Troutt, Gribbin, Shanker & Zhang</p>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">modes do not coincide with the target would cause doubts about whether the attempts have
+been effective or whether another target better explains the data. We call this normal-like-orbetter (NLOB) performance effectiveness. It is next necessary to obtain the analog of this
+             criterion for the efficiency performance data Yrj relevant to the present context.</p>
+           <p style="<b>;font-size: 20px;margin-left: 20px;">If x is distributed as N (µ,Σ) on ℜn n, then it well known that the quadratic form, w(x)=
+(x-µ)’Σ−1(x-µ) is gamma(α,β), where α = n/2 and β=2. This distribution is also called the Chisquare distribution with n degrees of freedom (see Law & Kelton, 1982). We may note that
+for this case w(x) is in the nature of a squared distance from the target set {µ}. It is useful
+to derive this result by a different technique. Vertical density representation (VDR) is a
+technique for representing a multivariate density by way of a univariate density called the
+ordinate or vertical density, and uniform distributions over the equidensity contours of the
+original multivariate density. VDR was introduced in Troutt (1993). (See also Kotz, Fang &
+Liang, 1997; Kotz & Troutt, 1996; Troutt ,1991; and Troutt & Pang, 1996.) The version of VDR
+needed for the present purpose can be derived as follows. Let w(x) be a continuous convex
+function on ℜn with range [0,∞); and let g(w) be a density on [0,∞). Suppose that for each
+value of u≥0, x is uniformly distributed on the set {x:w(x)=u}. Consider the process of sampling
+a value of u according to the g(w) density, and then sampling a vector, x, according to the
+uniform distribution on the set {x:w(x)=u}. Next let f(x) be the density of the resulting x variates
+on ℜn . Finally, let A(u) be the volume (Lebesgue measure) of the set {x : w(x) ≤ u}. Then
+we have the following VDR theorem that relates g(w) and f(x) in ℜn . The proof is given in
+the Appendix.
+Theorem 2: If A(u) is differentiable on [0,∞) with A’(u) strictly positive, then x is distributed
+according to the density f(x) where
+f(x) = φ(w(x)) and g(w) = φ(w) / A’(w).
+Theorem 2 can be applied to derive a very general density class for performance related to
+squared distance type error measures. The set {x: (x-µ)’ Σ−1 (x-µ)≤ u} has volume, A(u), given
+by A(u) = αn |Σ|1/2 u n/2 where αn
+ = πn/2 / n
+/
+2 Γ(n
+/
+2
+), (Fleming, 1977), so that A/
+(u) = n
+/
+2 αn |Σ|1/
+2
+               u n/2 - 1 . The gamma(α,β) density is given by</p>
+         <p style="<b>;font-size: 20px;margin-left: 20px;">g(u) = (Γ(α)βα)
+-1 uα-1 exp{- u2
+/β}.
+Therefore Theorem 2 implies that if w(x) = (x-µ)
+/
+Σ−1(x-µ) and g(u) = gamma (α,β), then the
+             corresponding f(x), which we now rename as ψ (x) = ψ (x;n,a,β), is given by</p>
+        <img src="formula%206.jpg">
+        <p style="<b>;font-size: 20px;margin-left: 20px;">For this density class we have the following observations:
+(1) If α = n/2 and β=2, then ψ(x) is the multivariate normal density, N(µ,Σ).
+(2) If α = n/2 and β ≠ 2, then ψ(x) is steeper or flatter than N(µ,Σ) according to whether β
+            < 2 or β>2, respectively. We call these densities the normal-like densities.</2>
+        </p>
+    </body>
+</html>
+        
+        
+        
+        
+        
+                
+
+                
+        
+
+        
+        
+        
+        
+        
+        
+ 
+ 
+ 
+	
+        
